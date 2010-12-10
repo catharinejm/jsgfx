@@ -29,6 +29,7 @@ function drawSquare(theta) {
     deltaY = 0;
   } else {
     var hyp = deltaX / Math.sin(theta);
+    // console.log(hyp);
     deltaY = hyp * Math.cos(theta);
   }
 
@@ -40,7 +41,7 @@ function drawSquare(theta) {
   context.lineTo(left + deltaX, topp - deltaY);
   context.stroke();
 
-  alert("theta: " + (theta / Math.PI) + "pi");
+  // alert("theta: " + (theta / Math.PI) + "pi");
 
 }
 
